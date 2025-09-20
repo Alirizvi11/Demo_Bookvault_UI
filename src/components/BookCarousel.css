@@ -1,0 +1,7 @@
+.book-carousel::-webkit-scrollbar {
+  display: none;
+}
+.book-carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

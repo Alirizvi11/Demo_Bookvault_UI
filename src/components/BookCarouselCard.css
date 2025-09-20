@@ -1,0 +1,36 @@
+.carousel-card {
+  perspective: 1000px;
+  width: 200px;
+  height: 220px;
+}
+.carousel-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.carousel-card.flipped .carousel-card-inner {
+  transform: rotateY(180deg);
+}
+.carousel-card-front,
+.carousel-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+}
+.carousel-card-back {
+  transform: rotateY(180deg);
+}
+
+.blink {
+  animation: blink 1s infinite;
+  color: red;
+  font-weight: bold;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

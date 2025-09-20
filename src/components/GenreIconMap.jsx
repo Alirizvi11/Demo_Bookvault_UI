@@ -1,0 +1,42 @@
+import {
+  FaBook,
+  FaLaptopCode,
+  FaHeart,
+  FaMagic,
+  FaTheaterMasks,
+  FaGhost,
+  FaUser,
+  FaBrain,
+  FaBalanceScale,
+  FaMoneyBillWave,
+  FaRocket,
+  FaChartLine,
+  FaMapMarkedAlt,
+  FaLandmark,
+  FaUserTie,
+} from "react-icons/fa";
+
+const GenreIconMap = {
+  Fiction: <FaBook />,
+  Programming: <FaLaptopCode />,
+  Romance: <FaHeart />,
+  Fantasy: <FaMagic />,
+  Thriller: <FaTheaterMasks />,
+  Classic: <FaLandmark />,
+  Dystopian: <FaMapMarkedAlt />,
+  Drama: <FaTheaterMasks />,
+  Horror: <FaGhost />,
+  Biography: <FaUser />,
+  Memoir: <FaUserTie />,
+  "Self-Help": <FaBrain />,
+  Philosophy: <FaBalanceScale />,
+  Finance: <FaMoneyBillWave />,
+  Motivation: <FaRocket />,
+  Business: <FaChartLine />,
+  Leadership: <FaUserTie />,
+  Adventure: <FaMapMarkedAlt />,
+  Historical: <FaLandmark />,
+  "Non-Fiction": <FaBook />,
+};
+
+export default GenreIconMap;
