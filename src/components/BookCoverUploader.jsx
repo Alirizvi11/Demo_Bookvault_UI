@@ -18,7 +18,7 @@ export default function BookCoverUploader() {
     }
 
     try {
-      const res = await fetch("https://demo-bookvault.onrender.com/api/update-cover", {
+      const res = await fetch("https://bookvault-backend.onrender.com/api/update-cover", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, cover_url: coverUrl }),
