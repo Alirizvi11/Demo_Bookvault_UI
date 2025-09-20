@@ -33,7 +33,7 @@ useEffect(() => {
     }
 
     // Step 2: Get new member ID
-    const members = await fetch("https://demo-bookvault.onrender.com/members/get-members").then(res => res.json());
+    const members = await fetch("https://bookvault-backend.onrender.com/members/get-members").then(res => res.json());
     const newMember = members[members.length - 1]; // Last inserted
 
     // Step 3: Issue Book
